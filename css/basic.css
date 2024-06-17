@@ -11,6 +11,9 @@ body {
 	background-color: #000000;
 	margin: 0;
 	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 }
 
 .flipbook-viewport {
@@ -64,8 +67,6 @@ body {
 	-ms-transition: margin-left 0.2s ease-in-out;
 	transition: margin-left 0.2s ease-in-out;
 }
-
-Minified CSS Output @charset "utf-8";
 
 *,
 body {
