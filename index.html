@@ -62,14 +62,17 @@
 
 
 			if (!checkMobile()) { // not mobile
+
+				height = "90vh";
+
 				$('.flipbook').turn({
 					// Width
 
-					width: 700,
+					width: "100vh",
 
 					// Height
 
-					height: 600,
+					height: height,
 
 					// Elevation
 					elevation: 600,
@@ -82,7 +85,7 @@
 
 					autoCenter: true,
 
-					display: 'double'
+					display: 'double',
 
 				});
 				document.getElementsByClassName('flipbook')[0].style.transform = 'translate(-50% , -50%)';
@@ -91,11 +94,11 @@
 				$('.flipbook').turn({
 					// Width
 
-					width: 950,
+					width: "90vw",
 
 					// Height
 
-					height: 1600,
+					height: "150vw",
 
 					// Elevation
 
