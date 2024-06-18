@@ -4,12 +4,13 @@
 <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="pt-br"> <!--<![endif]-->
 
 <head>
-	<meta name="viewport" content="width = 1050, user-scalable = no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
 	<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<title>Raizes</title>
 </head>
 
@@ -48,7 +49,10 @@
 		</div>
 	</div>
 
+	<div onclick="previousPage()" class="leftBtn"><i class="fas fa-chevron-left"></i></div>
+	<div onclick="nextPage()" class="rightBtn"><i class="fas fa-chevron-right"></i></div>
 
+	<script src="main.js"></script>
 	<script type="text/javascript">
 
 		function checkMobile() {
@@ -75,8 +79,10 @@
 					height: height,
 
 					// Elevation
-					elevation: 600,
 
+					elevation: 100,
+
+					duration: 1500,
 					// Enable gradients
 
 					gradients: true,
@@ -88,7 +94,6 @@
 					display: 'double',
 
 				});
-				document.getElementsByClassName('flipbook')[0].style.transform = 'translate(-50% , -50%)';
 			}
 			else {
 				$('.flipbook').turn({
@@ -101,6 +106,9 @@
 					height: "150svw",
 
 					// Elevation
+
+					elevation: 0,
+
 					duration: 2000,
 
 					// Enable gradients
