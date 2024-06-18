@@ -102,6 +102,7 @@ body {
 	.leftBtn {
 		bottom: 0;
 		top: auto;
+		cursor: auto;
 	}
 }
 
